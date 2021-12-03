@@ -1,0 +1,40 @@
+$fonts: (
+   $acalsonpro-bold: '../fonts/ACaslonPro-Bold.otf',
+   $acalsonpro-regular: '../fonts/ACaslonPro-Regular.otf',
+   $avantgrade-demi: '../fonts/AvantGarde-Demi.ttf',
+   $avenir-heavy: '../fonts/Avenir-Heavy.ttf',
+   $avenirltstd-black: '../fonts/AvenirLTStd-Black.ttf',
+   $avenirltstd-book: '../fonts/AvenirLTStd-Book.ttf',
+   $avenirltstd-roman: '.../fonts/AvenirLTStd-Roman.ttf',
+   $handdrawnstd-regular: '../fonts/HandDrawnStd-Regular.otf',
+   $myriadpro-regular: '../fonts/MYRIADPRO-REGULAR.woff',
+   $myriadpro-semibold: '../fonts/MYRIADPRO-SEMIBOLD.woff',
+);
+$font-asign: (
+   $acalsonpro-bold: 'acalsonpro-bold',
+   $acalsonpro-regular: 'acalsonpro-regular',
+   $avantgrade-demi: 'avantgrade-demi',
+   $avenir-heavy: 'avenir-heavy',
+   $avenirltstd-black: 'avenirltstd-black',
+   $avenirltstd-book: 'avenirltstd-book',
+   $avenirltstd-roman: 'avenirltstd-roman',
+   $handdrawnstd-regular: 'handdrawnstd-regular',
+   $myriadpro-regular: 'myriadpro-regular',
+   $myriadpro-semibold: 'myriadpro-semibold',
+);
+
+// Fonts Import:
+@each $name, $src in $fonts {
+   @font-face {
+      font-family: $name;
+      font-style: normal;
+      font-weight: normal;
+      src: url($src);
+   }
+}
+
+@each $name, $fname in $font-asign {
+   .f-#{$fname} {
+      font-family: $name !important;
+   }
+}

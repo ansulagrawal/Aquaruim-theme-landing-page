@@ -1,0 +1,27 @@
+@use 'sass:math';
+
+// function for converting px to vw
+@function vw($px-vw, $base-vw: 1366px) {
+   @return math.div(($px-vw * 100vw), $base-vw);
+}
+
+// Function for tracking
+@function tracking($target) {
+   @return math.div($target, 1000) * 1em;
+}
+
+// PhotoShop unit conversion
+@function photoshop-unit-convertsion($unit, $return: 'em', $base: '16') {
+   @if $return == 'em' {
+      @return math.div(($unit), 1000);
+   } @else {
+      @return ($unit * $base) / 1000;
+   }
+}
+
+// light-complement
+@function light-comp($color) {
+   $complement: complement($color);
+   $light-complement: lighten($complement, 30%);
+   @return $light-complement;
+}

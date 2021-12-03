@@ -1,0 +1,25 @@
+@use 'sass:math';
+
+@mixin title($bg-color: $info) {
+   text-align: center;
+   font-size: $font-size-xl * 2;
+   padding: math.div($base-padding, 4) math.div($base-padding, 2);
+   // font-weight: bold;
+
+   @media (max-width: 1259px) {
+      font-size: 28pt;
+   }
+}
+
+.title {
+   @include title;
+}
+@each $key, $val in $colors {
+   .title-#{$key} {
+      @include title($val);
+   }
+}
+
+.title {
+   color: $blue;
+}

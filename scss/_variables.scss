@@ -1,0 +1,73 @@
+// Fonts variable:
+$acalsonpro-bold: 'ACaslon Pro Bold';
+$acalsonpro-regular: 'ACaslon Pro Regular';
+$avantgrade-demi: 'Avant Grade Demi';
+$avenir-heavy: 'Avenir Heavy';
+$avenirltstd-black: 'Avenir LT Std Black';
+$avenirltstd-book: 'Avenir LT Std Book';
+$avenirltstd-roman: 'Avenir LT Std Roman';
+$handdrawnstd-regular: 'Hand Drawn Std Regular';
+$myriadpro-regular: 'Myriad Pro Regular';
+$myriadpro-semibold: 'Myriad Pro SemiBold';
+$opensans: 'Open Sans';
+
+// Colors variables:
+
+// theme colors
+$primary: #326dee !default;
+$secondary: #1ac886 !default;
+$error: #d32752 !default;
+$info: #f6c31c !default;
+$blue: #1a2675 !default;
+$red: #e61919 !default;
+$yellow: #e6e619 !default;
+$green: #19e635 !default;
+$orange: #ffa600 !default;
+$purple: #9900ff !default;
+$gray: #808080 !default;
+$black: black !default;
+$white: white !default;
+$transparent: #fff0 !default;
+
+// color palette
+$colors: (
+   'primary': $primary,
+   'secondary': $secondary,
+   'error': $error,
+   'info': $info,
+   'blue': $blue,
+   'red': $red,
+   'yellow': $yellow,
+   'green': $green,
+   'orange': $orange,
+   'purple': $purple,
+   'gray': $gray,
+   'black': $black,
+   'white': $white,
+   'transparent': $transparent,
+) !default;
+
+// spacing
+$base-padding: 0.75rem !default;
+$base-margin: 0.75rem !default;
+
+// borders
+$base-border-thickness: 1px !default;
+$base-border-radius: 20px !default;
+
+// box-shadow
+$base-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1) !default;
+
+// font sizes
+$base-font-size: 1rem !default;
+$font-size-sm: $base-font-size * 0.75 !default;
+$font-size-lg: $base-font-size * 1.5 !default;
+$font-size-xl: $base-font-size * 2 !default;
+$font-size-xxl: $base-font-size * 3 !default;
+
+// letter-spacing:
+$base-letter-spacing: 0.1em !default;
+$letter-spacing-sm: $base-letter-spacing * 0.75 !default;
+$letter-spacing-lg: $base-letter-spacing * 1.5 !default;
+$letter-spacing-xl: $base-letter-spacing * 2 !default;
+$letter-spacing-xxl: $base-letter-spacing * 3 !default;
