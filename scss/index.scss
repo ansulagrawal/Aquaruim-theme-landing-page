@@ -722,10 +722,6 @@ footer {
    }
 }
 
-button {
-   animation: left-to-right 3s linear 0s infinite normal both !important;
-}
-
 @keyframes left-to-right {
    0% {
       transform: translateX(-50px);
@@ -750,10 +746,6 @@ button {
    }
 }
 
-img {
-   animation: bounce-in 3s linear 0s infinite normal both !important;
-}
-
 @keyframes bounce-in {
    0% {
       transform: scale3d(0.5, 0.5, 0.5);
@@ -769,17 +761,6 @@ img {
    }
    100% {
       transform: scaleX(1);
-   }
-}
-.header-logo,
-.fish-care-container {
-   img {
-      animation: none !important;
-   }
-}
-.navbar {
-   button {
-      animation: none !important;
    }
 }
 
